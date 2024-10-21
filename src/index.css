@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&family=Sriracha&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&family=Sriracha&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kadwa:wght@700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.spin {
+  animation: spin 40s linear infinite;
+}
+/* Hide scrollbar for the entire body */
+body {
+  scroll-behavior: smooth;
+   /* Hides both vertical and horizontal scrollbars */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+}
+
+
+
+/* smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+  display: none;
+}
+@media screen and (min-width: 640px) {
+  .mobile-background {
+    position: relative;
+    background-size: cover; /* Full cover for mobile */
+    width: 100vw; /* Full viewport width for mobile */
+    height: 10vh; /* Full viewport height for mobile */
+    margin-top: 0; /* Adjust or remove negative margin for mobile */
+  }
+}

@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+  }
+  
+  .pattern-container {
+    display: grid;
+    grid-template-columns: repeat(6, 100px); /* 6 columns */
+    grid-template-rows: repeat(6, 100px);    /* 6 rows */
+    gap: 15px;
+  }
+  
+  .shape {
+    background-size: cover;
+    background-position: center;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .circle {
+    width: 100px;
+    height: 100px;
+    clip-path: circle(50%);
+  }
+  
+  .diamond {
+    width: 70px;
+    height: 70px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    margin: auto;
+  }
+  
+  .small-circle {
+    width: 30px;
+    height: 30px;
+    clip-path: circle(50%);
+    align-self: center;
+    justify-self: center;
+  }
+  
